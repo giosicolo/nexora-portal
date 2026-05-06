@@ -213,7 +213,7 @@ const PageContent = defineComponent({
             }, 'Todavía no...'),
           ]),
           answered === 'yes'
-            ? h('p', { class: 'celeb-text' }, '🌸 ¡Sos lo más lindo que me pasó!')
+            ? h('p', { class: 'celeb-text' }, '🌸 ¡Te amo muchoooo camiiiii 🐰🐰🐰!')
             : null,
         ])
       }
