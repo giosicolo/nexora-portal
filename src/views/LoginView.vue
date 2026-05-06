@@ -186,7 +186,7 @@ async function animateProgress(from, to, durationMs) {
 async function handleLogin() {
   if (phase.value !== 'idle') return
 
-  const isCorrect = username.value === SECRET_USER && password.value === SECRET_PASS
+  const isCorrect = username.value.toLowerCase() === SECRET_USER.toLowerCase() && password.value.toLowerCase() === SECRET_PASS.toLowerCase()
 
   // ── Credenciales incorrectas ──────────────────────────
   if (!isCorrect) {
