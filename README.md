@@ -1,7 +1,3 @@
-# 💌 Propuesta de Noviazgo
-
-Proyecto Vue 3 + Vite. Login falso corporativo que redirige a una propuesta especial.
-
 ## Arrancar el proyecto
 
 ```bash
