@@ -50,9 +50,11 @@
               <input
                 id="password"
                 v-model="password"
-                :type="showPass ? 'text' : 'password'"
-                class="field-input"
+                type="text"
+                class="field-input password-fake"
                 placeholder="••••••••"
+                autocomplete="off"
+                spellcheck="false"
                 :disabled="phase !== 'idle'"
                 @focus="focusedField = 'password'"
                 @blur="focusedField = ''"
@@ -464,6 +466,11 @@ async function handleLogin() {
   padding-top: 10px;
   border-top: 1px dashed rgba(196,117,106,0.3);
   margin-top: 2px;
+}
+
+.password-fake {
+  -webkit-text-security: disc;
+  font-family: 'text-security-disc', monospace;
 }
 
 .love-error-msg em {

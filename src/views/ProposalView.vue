@@ -393,6 +393,7 @@ function checkMobile() {
 }
 
 onMounted(() => {
+  window.scrollTo(0, 0)
   checkMobile()
   window.addEventListener('resize', checkMobile)
   setTimeout(() => { revealed.value = true }, 200)
