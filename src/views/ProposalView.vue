@@ -135,7 +135,7 @@
     </section>
 
     <footer class="proposal-footer">
-      <span>Hecho con ♥ y mucho código</span>
+      <span>♥♥♥ Hecho con mucho amooor ♥♥♥ by Chanchi</span>
     </footer>
 
   </div>
@@ -228,12 +228,13 @@ export default { components: { PageContent } }
 
 <script setup>
 import { ref, reactive, computed, onMounted, onUnmounted } from 'vue'
+const base = import.meta.env.BASE_URL
 
 // ✏️ PERSONALIZÁ ESTE DATO
 const recipientName = ref('Cami')
 
 const fechaConocidos   = new Date('2025-10-29')  // cuando la conociste
-const fechaPrimerMsg   = new Date('2024-03-15T21:30:00')  // primer mensaje
+const fechaPrimerMsg   = new Date('2026-02-14T11:30:00')  // primer mensaje
 const fecha3  = new Date('2024-03-15')  // cuando la conociste
 const fecha4  = new Date('2024-03-15T21:30:00')  // primer mensaje
 
@@ -258,11 +259,11 @@ const spreads = [
       type: 'cover',
       eyebrow: 'MI CONEJITA 🐰',
       title: 'TE AMO\nCAMILA',
-      subtitle: 'Este pequeño presentito, es a mi manera,\nuna forma de ayudarme un poco a expresar\nalgo de lo que ya hace ratito vengo con ganas de preguntar.\n \n ME VOLVES LOCO CAMILA\n \n No hay momento en que no te este pensando y\n soñando en que por siempre seas parte de mi vida ',
+  subtitle: 'Este pequeño presentito es, a mi manera,\nuna forma de ayudarme un poco a expresar\nalgo de lo que ya hace ratito vengo con ganas de preguntar.\n \n ME VOLVÉS LOCO CAMILA\n \n No hay momento en que no te esté pensando y\nsoñando en que por siempre seas parte de mi vida ',
     },
     right: {
       type: 'photo',
-      src: "/photos/foto1.jpeg",
+      src: `${base}photos/foto1.jpeg`,
       file: 'foto1.jpg',
       caption: '-',
     },
@@ -274,14 +275,14 @@ const spreads = [
       type: 'text',
       title: 'MI BONITAAA',
       paragraphs: [
-        'Si bien no nos conocemos hace tanto, creo que si se trata de emociones, el tiempo es algo totalmente relativo',
-        'Lo que vos me haces sentir no tiene nombre, pero esa mezcla de amor, felicidad, el acompañamiento y muchasimas otras cosas mas me hacen sentir increible cuando estoy a tu lado',
+      'Si bien no nos conocemos hace tanto, creo que, si se trata de emociones, el tiempo es algo super relativo',
+      'Lo que vos me hacés sentir no tiene nombre, pero esa mezcla de amor, felicidad, el acompañamiento y muchísimas otras cosas más me hacen sentir increíble cuando estoy a tu lado',
       ],
       signature: 'Chanchi',
     },
     right: {
       type: 'photo',
-      src: '/photos/foto2.jpeg',
+      src: `${base}photos/foto2.jpeg`,
       file: 'foto2.jpg',
       caption: '-',
     },
@@ -291,19 +292,19 @@ const spreads = [
   {
     left: {
       type: 'photo',
-      src: '/photos/foto3.jpeg',
+      src: `${base}photos/foto3.jpeg`,
       file: 'foto3.jpg',
       caption: '-',
     },
     right: {
       type: 'text',
-      title: 'Porque me sigo acordando de todo',
+      title: 'Por que me sigo acordando de todo',
       paragraphs: [
-        'Aca van unos datitos de los que nunca me olvido, de esos que te hicieron pensar de lo raro que soy y si no te convenia irte corriendo, pero es que si se trata de vos es imposible olvidarme de hasta el mas minimo detalle',
-        'Pasaron aproximadamente  dias de que vi esa hermosa carita por primera vez y aunque no intercambiamos muchas palabras, entraste enseguida a mi cabeza y no pude ni olvidarme de lo que tenias puesto',
-        'Por la madrugada de navidad tan hermosa que me hiciste pasar, de bajonearme un poco porque no quisieron salir a volver y encontrarme que seguian ahi y compartir ademas de unos jaggers, las primeras charlitas donde empezaba a detectar la linda persona que sos',
-        'SI PERDON, perdon porque te escribi el primer mensaje hace solo y respondiendo una historia DE UN LIBRO, pero gracias por animarte a seguirme la charla y permitir que nos vayamos acercando de una manera tan natural'
-      ],
+      'Acá van unos datitos de los que nunca me olvido, de esos que te hicieron pensar de lo raro que soy y si no te convenía irte corriendo, pero es que, si se trata de vos, es imposible olvidarme de hasta el más mínimo detalle',
+      `Pasaron aproximadamente ${diasJuntos} días de que vi esa hermosa carita por primera vez y, aunque no intercambiamos muchas palabras, entraste enseguida a mi cabeza y no pude ni olvidarme de lo que tenías puesto`,
+      'Por la madrugada de Navidad tan hermosa que me hiciste pasar, de bajonearme un poco porque no quisieron salir, a volver y encontrarme que seguían ahí y compartir, además de unos jaggers, las primeras charlitas donde empezaba a detectar la linda persona que sos',
+      `SI PERDÓN, perdón porque te escribí el primer mensaje hace solo ${horasMensaje} HS y respondiendo una historia DE UN LIBRO, pero gracias por animarte a seguirme la charla y permitir que nos vayamos acercando de una manera tan natural`
+],
     },
   },
 
@@ -311,16 +312,16 @@ const spreads = [
   {
     left: {
       type: 'text',
-      title: 'Porque me sigo acordando de todo p2',
+      title: 'Por que me sigo acordando de todo p2',
       paragraphs: [
-        'Obviamente no voy a dejar pasar la divertida e inolvidable noche en roca, que tuvo risas, cosas bizarras pero sobre todo la posibilidad de tomarnos un momentito a solas para lo que iba a ser nuestro primer beso',
-        'Apenitas unos dias despues, llego el dia de compartir por primera vez algo solos, un almuerzo improvisado, donde mientras te esperaba que bajaras del estudio por dentro me moria de nervios, pero a medida fuimos charlando me diste tanta tranquilad, como lo haces al dia de hoy y me permitis mostrarme tal como soy',
-        'Un dia que tambien recuerdo mucho, es el dia que tuve el valor de preguntarte en el auto que idea tenias vos para nosotros, para ver si estabamos alineados.... despues que me cuente tanto decirlo, la tranquilidad y felicidad que me dio que tengas ideales y visiones muy parecidas a las mias no lo puedo explicar',
-      ],
+      'Obviamente no voy a dejar pasar la divertida e inolvidable noche en Roca, que tuvo risas, cosas bizarras, pero sobre todo la posibilidad de tomarnos un momentito a solas para lo que iba a ser nuestro primer beso',
+      'Apenitas unos días después, llegó el día de compartir por primera vez algo solos, un almuerzo improvisado, donde mientras te esperaba que bajaras del estudio, por dentro me moría de nervios, pero a medida que fuimos charlando me diste tanta tranquilidad, como lo hacés al día de hoy, y me permitís mostrarme tal como soy',
+      'Un día que también recuerdo mucho es el día que tuve el valor de preguntarte en el auto qué idea tenías vos para nosotros, para ver si estábamos alineados... después que me costó tanto decirlo, la tranquilidad y felicidad que me dio que tengas ideales y visiones muy parecidas a las mías no lo puedo explicar',
+],
     },
     right: {
       type: 'photo',
-      src: '/photos/foto4.jpeg',
+      src: `${base}photos/foto4.jpeg`,
       file: 'foto4.jpg',
       caption: '-',
     },
@@ -330,7 +331,7 @@ const spreads = [
   {
     left: {
       type: 'photo',
-      src: '/photos/foto5.jpeg',
+      src:  `${base}photos/foto5.jpeg`,
       file: 'foto5.jpg',
       caption: '-',
     },
@@ -338,10 +339,10 @@ const spreads = [
       type: 'proposal',
       title: '¿Querés ser mi novia?',
       paragraphs: [
-        'Podria llenar varias hojas mas de momentos que me encantaron con vos, porque cada juntada que tuvimos fue unica y siempre me dejo algo lindo',
-        'Pero mi idea de esto, es que estos recuerdos sean apenitas una minima parte de los miles y miles que quiero tener con vos',
-        'Esto no es negro o blanco, si es necesario yo te voy a esperar lo que necesites, pero si algo tenes que saber Camila, es que yo me muero de ganas de llenarte de amor, acompañarte y cuidarte por muchisimo pero muchisimo tiempo mas'
-      ],
+      'Podría llenar varias hojas más de momentos que me encantaron con vos, porque cada juntada que tuvimos fue única y siempre me dejó algo lindo',
+      'Pero mi idea de esto es que estos recuerdos sean apenitas una mínima parte de los miles y miles que quiero tener con vos',
+      'Esto no es negro o blanco, si es necesario, yo te voy a esperar lo que necesites, pero si algo tenés que saber, Camila, es que yo me muero de ganas de llenarte de amor, acompañarte y cuidarte por muchísimo, pero muchísimo tiempo más'
+],
     },
   },
 ]
@@ -366,10 +367,7 @@ const currentDate = new Date().toLocaleDateString('es-AR', {
 })
 
 const celebrationMessages = [
-  '🌸 ¡Sos lo más lindo que me pasó!',
-  '✨ Prometo hacerte sonreír cada día.',
-  '💕 El mejor bug que nunca voy a querer fixear.',
-  '🚀 ¡A deployar nuestra historia juntos!',
+  '🌸 ¡Te quiero muchisimo mi conejitaaaaaaaaa!',
 ]
 
 // Clase de animación para la página móvil
