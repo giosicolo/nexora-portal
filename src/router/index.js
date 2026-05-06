@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory  } from 'vue-router'
 import LoginView from '../views/LoginView.vue'
-import ProposalView from '../views/ProposalViewV1.vue'
+import ProposalView from '../views/ProposalView.vue'
 
 // Bandera simple en memoria para controlar acceso
 let authenticated = false
