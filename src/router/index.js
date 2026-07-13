@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory  } from 'vue-router'
 import LoginView from '../views/LoginView.vue'
 import ProposalView from '../views/ProposalView.vue'
+import BirthdayView from '../views/BirthdayView.vue'  
 
 // Bandera simple en memoria para controlar acceso
 let authenticated = false
@@ -26,6 +27,14 @@ const routes = [
     beforeEnter: () => {
       if (!authenticated) return '/login'
     }
+  },
+  {
+    path: '/cumpleanos',    
+    name: 'Birthday',
+    component: BirthdayView,
+    beforeEnter: () => {
+      if (!authenticated) return '/login'
+    }
   }
 ]
 
@@ -35,5 +44,3 @@ const router = createRouter({
 })
 
 export default router
-
-

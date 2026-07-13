@@ -135,6 +135,14 @@
     </section>
 
     <footer class="proposal-footer">
+      <!-- Botón cumpleaños -->
+      <transition name="celeb-fade">
+      <div v-if="showBirthday" class="birthday-banner">
+      <button class="btn-birthday" @click="router.push('/cumpleanos')">
+      🎂 ¡Feliz cumpleaños!
+    </button>
+  </div>
+</transition>
       <span>♥♥♥ Hecho con mucho amooor ♥♥♥ by Chanchi</span>
     </footer>
 
@@ -247,6 +255,17 @@ function diffHoras(desde) {
 
 const diasJuntos  = diffDias(fechaConocidos)
 const horasMensaje = diffHoras(fechaPrimerMsg)
+
+import { useRouter } from 'vue-router'
+const router = useRouter()
+
+// Mostrar botón si es 14 de julio 2026 o después
+const showBirthday = computed(() => {
+  const hoy = new Date()
+  const cumple = new Date(2026, 6, 14) // mes 6 = julio (0-indexed)
+  return true
+  //hoy >= cumple
+})
 
 // ════════════════════════════════════════════════════════════
 //  CONTENIDO DEL LIBRO
@@ -739,6 +758,36 @@ function launchConfetti() {
   .book-nav   { gap:12px; }
   .nav-btn    { min-width:90px; padding:9px 14px; font-size:10px; }
 }
+
+.birthday-banner {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.btn-birthday {
+  background: var(--rose);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-style: italic;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 24px rgba(196, 117, 106, 0.4);
+  transition: background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.btn-birthday:hover {
+  background: var(--deep-rose);
+  transform: translateX(-50%) scale(1.04);
+}
+
+
 </style>
 
 <style>
