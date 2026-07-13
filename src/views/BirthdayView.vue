@@ -32,24 +32,19 @@
         <div class="card-tag">Carta</div>
         <p class="dedication-text">
           <!-- ✏️ Escribí tu carta acá -->
-          Cami, si estas leyendo esto, probablemente ya te lo dije, pero MUY FELIZ CUMPLEAÑOS AMOR DE MI VIDA, no sabes lo feliz y contento que me pone que hayas querido que tu cumple nos encuentre juntos, disfrutando de nuestro primer viaje y locamente enamorados. Me pongo a pensar e hice algo de trampa, porque el la cumpleañera sos vos, pero el que hoy y cada día desde que te conozco está recibiendo de los mejores regalos de su vida, por tenerte a vos, soy yo.
+          Cami, si estas leyendo esto, probablemente ya te lo dije, pero MUY FELIZ CUMPLEAÑOS AMOR DE MI VIDA, no sabes lo feliz y contento que me pone que hayas querido que tu cumple nos encuentre juntos, disfrutando de nuestro primer viaje y locamente enamorados. Me pongo a pensar e hice algo de trampa, porque la cumpleañera sos vos, pero el que hoy y cada día desde que te conozco está recibiendo de los mejores regalos de su vida por tenerte a vos, soy yo.
         </p>
         <p class="dedication-text">
-          <!-- ✏️ Segundo párrafo -->
           No se que estaré haciendo yo en el momento que leas esto, porque me surgen muchas ideas de en qué momento avisarte que la pagina tiene una actualizacion, creo que lo que mas me cierra es que sea mientras yo desaparezco un poco bien tempranito, mientras intentó conseguirle un rico y calentito desayuno a la mujer maravillosa que alegra cada una de mis mañanas con sus hermosos mensajitos que me hacen iniciar tan bien mis días, ojalá, pueda conseguirlo y devolverte un poquito de ese sentimiento que tanto me acompaña.  
         </p>
         <p class="dedication-text">
-          <!-- ✏️ Segundo párrafo -->
             Tengo que confesarte que a veces pienso que estoy viviendo dentro de la mejor película romántica jamás creada, porque es increíble que todo lo que me generas y haces sentir sea tan real que me hace dudar de si estamos en una ficción. Sos un sin fin de hacerme experimentar cosas tan pero tan lindas que no me saldría ni soñar ni imaginarme a alguien capaz de dar un amor tan real y lleno de emociones como el que me haces llegar.         </p>
         <p class="dedication-text">
-          <!-- ✏️ Segundo párrafo -->
             Bueno, no se que me pasa pero esto supuestamente era una carta de cumpleaños y en vez de desearte cosas a vos, no puedo parar de pensar y escribir todo el amor, felicidad, tranquilidad, atracción, confianza, cariño, aprendizaje, ternura, conexión, sensibilidad, seguridad, deseo, dulzura, energía, motivación, paz y cercanía (me faltaron miles de cosas mas) que siento que vos me das y por el cual te voy a estar agradecido la vida entera, por el que vos, una grandísima persona, se haya fijado en mí y me este eligiendo para tenerme a su lado.         </p>
         <p class="dedication-text">
-          <!-- ✏️ Segundo párrafo -->
             Simplemente espero que en mi rol de novio, poder hacerte llegar algo parecido a todo lo hermoso que vos me haces sentir a mi, que en este nuevo año que cumplis y en todos los que se vienen, poder seguir viviendolos junto a vos y llenandolos de nuevas experiencias. ESO ES HOY UNO DE MIS MAYORES DESEOS, ESO Y QUE SEAS SIEMPRE FELIZ, POR QUE VER ESA CARITA REIR Y OBSERVAR TU SONRISA ES LA MAYOR ALEGRIA QUE YO PUEDO TENER…. FELICES 26 MI CONEJITA, AMORCITO DE MI VIDA, HERMOSA, BONITAAAA, CAMILINDA, CAMIREINA.        </p>
-        <p class="card-signature">—  \n Porque esta sea la primera de muchísimas cartas de cumpleaños que te toque recibir, ojalá que en cada uno de los que te quede por vivir \n TE AMO CON TODO MI CORAZON, CHANCHI ♥</p>
+        <p class="card-signature">—Porque esta sea la primera de muchísimas cartas de cumpleaños que te toque recibir, ojalá que en cada uno de los que te quede por vivir. TE AMO CON TODO MI CORAZON, CHANCHI ♥</p>
       <p class="dedication-text">
-          <!-- ✏️ Segundo párrafo -->
             pd: Espero que esta cartita sirva hasta que te pueda hacer encontrar con tus verdaderos regalitos, igual, a continuacion te dejo entre algunas pistas, detalles para que vayas sabiendo el porque de cada eleccion        </p>
     </div>
 
@@ -74,7 +69,7 @@
     </main>
 
     <footer class="birthday-footer">
-      <span>Hecho con ♥ y mucho código</span>
+      <span>Hecho con ♥♥♥</span>
     </footer>
 
   </div>
@@ -84,7 +79,7 @@
 import { ref, onMounted } from 'vue'
 
 // ✏️ PERSONALIZÁ
-const recipientName = ref('Mi amor')
+const recipientName = ref('Mi amorcito')
 
 const revealed = ref(false)
 
